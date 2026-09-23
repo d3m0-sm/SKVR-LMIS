@@ -3,8 +3,8 @@
 SKYRIM_VR_APP_ID=611670
 TMP_DIR="/tmp/skyrim_mod_setup_script"
 MOD_ORG_2_REPO="ModOrganizer2/modorganizer"
-DEFUALT_STEAM_DIR="$HOME/.steam/steam"
-SKYRIM_VR_BIN_DIR="$DEFUALT_STEAM_DIR/steamapps/common/SkyrimVR"
+DEFAULT_STEAM_DIR="$HOME/.steam/steam"
+SKYRIM_VR_BIN_DIR="$DEFAULT_STEAM_DIR/steamapps/common/SkyrimVR"
 SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
 FILE_DIR="$SCRIPT_DIR/files"
 
@@ -51,12 +51,12 @@ fi
 echo "- Download done!"
 echo "> retrieveing skyrim vr steam dir..."
 
-if [[ ! -d "$DEFUALT_STEAM_DIR" ]]; then
-    echo "~ Default steam dir at $DEFUALT_STEAM_DIR does not exists. Please re-definde the DEFUALT_STEAM_DIR constant!"
+if [[ ! -d "$DEFAULT_STEAM_DIR" ]]; then
+    echo "~ Default steam dir at $DEFAULT_STEAM_DIR does not exists. Please re-definde the DEFAULT_STEAM_DIR constant!"
     exit 1
 fi
 
-skyrim_vr_prefix_drive="$DEFUALT_STEAM_DIR/steamapps/compatdata/$SKYRIM_VR_APP_ID/pfx/drive_c"
+skyrim_vr_prefix_drive="$DEFAULT_STEAM_DIR/steamapps/compatdata/$SKYRIM_VR_APP_ID/pfx/drive_c"
 
 if [[ ! -d "$skyrim_vr_prefix_drive" ]]; then
     echo "~ Could not find proton prefix of Skyrim VR. Please make sure you have installed it over steam!"
