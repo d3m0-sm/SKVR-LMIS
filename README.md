@@ -40,8 +40,9 @@ SKVR-LMIS installs [Mod Organizer 2](https://github.com/ModOrganizer2/modorganiz
   Once the script finishes, launch Skyrim VR from Steam as usual. Mod Organizer 2 will be available inside the game's Proton prefix, and SKSE will be ready to load your mods.
 
 ## Troubleshooting
-- Script fails to find the Proton prefix – Make sure you have launched Skyrim VR at least once so Steam creates the prefix.
-- Unsupported distribution – The script only supports Fedora, Ubuntu, and Debian. Other distros may work but are untested.
+- **Script fails to find the Proton prefix** – Make sure you have launched Skyrim VR at least once so Steam creates the prefix.
+- **Unsupported distribution** – The script only supports Fedora, Ubuntu, and Debian. Other distros may work but are untested.
+- **Custom Steam directory** – If your Steam library (where Skyrim VR is installed) is not located at `~/.steam/steam`, adjust the `DEFAULT_STEAM_DIR` variable at the top of the script.   
 
 ## Contributing
   Pull requests are welcome! For major changes, please open an issue first to discuss what you would like to change
