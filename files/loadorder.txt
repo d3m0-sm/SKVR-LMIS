@@ -1,0 +1,9 @@
+Skyrim.esm
+Update.esm
+Dawnguard.esm
+HearthFires.esm
+Dragonborn.esm
+SkyrimVR.esm
+SkyUI_SE.esp
+vrik.esp
+higgs_vr.esp
